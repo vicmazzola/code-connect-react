@@ -29,7 +29,7 @@
 
 
   <script type="text/babel">
-    function Title( {children} ) {
+    function Title({ children }) {
       return (
         <h1 className='form__title'>{children}</h1>
       )
@@ -41,11 +41,11 @@
       )
     }
 
-    function FieldInput({ label, type, placeholder }) {
+    function FieldInput({ label, type, placeholder, value, setValue }) {
       return (
         <div className='form__input-field'>
           <label for='email'>{label}</label>
-          <input type='type' placeholder={placeholder} required id='email' />
+          <input type='type' placeholder={placeholder} required id='email' value={value} onChange={(event) => setValue(event.target.value)}/>
         </div>
       )
     }
@@ -58,6 +58,11 @@
     }
 
     function LoginPage() {
+      let email = 'vic@test.com'
+      function replaceFieldValue(newValue) {
+        email = newValue;
+        console.log(email);
+      }
       return (
         <div className='container-login'>
           <img src='./img/login-img.png' alt='Black woman using computer' />
@@ -65,7 +70,7 @@
             <form>
               <Title>Login</Title>
               <Subtitle>Welcome! Please log in.</Subtitle>
-              <FieldInput label='Email or user' type='email' placeholder='Type your email or user' />
+              <FieldInput label='Email or user' type='email' placeholder='Type your email or user' value={email} setValue={replaceFieldValue} />
               <FieldInput label='Password' type='password' placeholder='Type your password' />
               <Button>Login</Button>
             </form>
