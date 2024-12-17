@@ -29,15 +29,15 @@
 
 
   <script type="text/babel">
-    function Title() {
+    function Title( {children} ) {
       return (
-        <h1 className='form__title'>Login</h1>
+        <h1 className='form__title'>{children}</h1>
       )
     }
 
-    function Subtitle() {
+    function Subtitle({ children }) {
       return (
-        <h2 className='form__subtitle'>Welcome! Please log in.</h2>
+        <h2 className='form__subtitle'>{children}</h2>
       )
     }
 
@@ -50,9 +50,9 @@
       )
     }
 
-    function Button() {
+    function Button({ children }) {
       return (
-        <button type='submit' className='form__button'>Login</button>
+        <button type='submit' className='form__button'>{children}</button>
 
       )
     }
@@ -63,11 +63,11 @@
           <img src='./img/login-img.png' alt='Black woman using computer' />
           <section>
             <form>
-              <Title />
-              <Subtitle />
+              <Title>Login</Title>
+              <Subtitle>Welcome! Please log in.</Subtitle>
               <FieldInput label='Email or user' type='email' placeholder='Type your email or user' />
               <FieldInput label='Password' type='password' placeholder='Type your password' />
-              <Button />
+              <Button>Login</Button>
             </form>
           </section>
         </div>
