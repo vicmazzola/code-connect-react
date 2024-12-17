@@ -37,11 +37,27 @@
 
     function Subtitle() {
       return (
-        <h2 className="form__subtitle">Welcome! Please log in.</h2>
+        <h2 className='form__subtitle'>Welcome! Please log in.</h2>
       )
     }
 
-    ReactDOM.createRoot(document.getElementById('root')).render(<Title />);
+
+
+    function LoginPage() {
+      return (
+        <div className='container-login'>
+          <img src='./img/login-img.png' alt='Black woman using computer' />
+          <section>
+            <form>
+              <Title />
+              <Subtitle />
+            </form>
+          </section>
+        </div>
+      )
+    }
+
+    ReactDOM.createRoot(document.getElementById('root')).render(<LoginPage />);
 
   </script>
 </body>
