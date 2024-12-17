@@ -41,18 +41,18 @@
       )
     }
 
-    function FieldInput() {
+    function FieldInput({ label, type, placeholder }) {
       return (
         <div className='form__input-field'>
-          <label htmlFor='email'>Email or User</label>
-          <input type='email' placeholder='Type your email or user' required id='email' />
+          <label for='email'>{label}</label>
+          <input type='type' placeholder={placeholder} required id='email' />
         </div>
       )
     }
 
     function Button() {
       return (
-        <button type='submit'>Login</button>
+        <button type='submit' className='form__button'>Login</button>
 
       )
     }
@@ -65,11 +65,8 @@
             <form>
               <Title />
               <Subtitle />
-              <FieldInput />
-              <div className='form__input-field'>
-                <label htmlFor='password'>Password</label>
-                <input type='password' placeholder='Type your password' required id='password' />
-              </div>
+              <FieldInput label='Email or user' type='email' placeholder='Type your email or user' />
+              <FieldInput label='Password' type='password' placeholder='Type your password' />
               <Button />
             </form>
           </section>
