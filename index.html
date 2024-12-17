@@ -51,11 +51,20 @@
             <form>
               <Title />
               <Subtitle />
+              <div className='form__input-field'>
+                <label htmlFor='email'>Email or User</label>
+                <input type='email' placeholder='Type your email or user' required id='email' />
+              </div>
+              <div className='form__input-field'>
+                <label htmlFor='password'>Password</label>
+                <input type='password' placeholder='Type your password' required id='password' />
+              </div>
             </form>
           </section>
         </div>
-      )
+      );
     }
+
 
     ReactDOM.createRoot(document.getElementById('root')).render(<LoginPage />);
 
