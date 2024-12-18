@@ -61,11 +61,18 @@
       const [email, setEmail] = React.useState('');
       const [password, setPassword] = React.useState('');
 
+      const handleSubmit = (event) => {
+        event.preventDefault();
+        console.log('email ' + email);
+        console.log('password ' + password);
+
+      }
+
       return (
         <div className='container-login'>
           <img src='./img/login-img.png' alt='Black woman using computer' />
           <section>
-            <form>
+            <form onSubmit={handleSubmit}>
               <Title>Login</Title>
               <Subtitle>Welcome! Please log in.</Subtitle>
               <FieldInput label='Email or user' type='email' placeholder='Type your email or user' value={email} setValue={setEmail} />
