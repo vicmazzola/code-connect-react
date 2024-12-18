@@ -58,11 +58,8 @@
     }
 
     function LoginPage() {
-      let email = 'vic@test.com'
-      function replaceFieldValue(newValue) {
-        email = newValue;
-        console.log(email);
-      }
+      const [email, setEmail] = React.useState('');
+      
       return (
         <div className='container-login'>
           <img src='./img/login-img.png' alt='Black woman using computer' />
@@ -70,7 +67,7 @@
             <form>
               <Title>Login</Title>
               <Subtitle>Welcome! Please log in.</Subtitle>
-              <FieldInput label='Email or user' type='email' placeholder='Type your email or user' value={email} setValue={replaceFieldValue} />
+              <FieldInput label='Email or user' type='email' placeholder='Type your email or user' value={email} setValue={setEmail} />
               <FieldInput label='Password' type='password' placeholder='Type your password' />
               <Button>Login</Button>
             </form>
