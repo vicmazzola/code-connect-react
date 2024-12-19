@@ -89,7 +89,7 @@
     function Link({ children }) {
       return (
         <a href='#' className='container-links__link'>
-          children
+          {children}
         </a>
       )
     }
@@ -130,6 +130,7 @@
                 <SocialMediaItem link="https://www.github.com" name="Github" />
                 <SocialMediaItem link="https://www.google.com" name="Google" />
               </ul>
+              <Link>Create your account!</Link>
             </div>
           </section>
         </div>
