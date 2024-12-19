@@ -9,7 +9,7 @@ See the application in action at: [CodeConnect](https://code-connect-react-five.
 
 ## 🖼️ Preview
 ![Code-Connect Preview](./img/preview.png)  
-*(Add a preview image of your project here)*
+
 
 ## 🔨 Project Features
 - **React Components:**
