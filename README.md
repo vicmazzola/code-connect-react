@@ -5,3 +5,4 @@ CodeConnect is a social network for developers created during the React: Compone
 # Technologies: 
 React, JSX, Babel, React-DOM, and component-based design.
 
+![Preview of CodeConnect](./img/preview.png)
