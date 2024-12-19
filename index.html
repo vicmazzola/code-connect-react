@@ -89,7 +89,13 @@
               <Subtitle>Welcome! Please log in.</Subtitle>
               <FieldInput label='Email or user' type='email' placeholder='Type your email or user' value={email} setValue={setEmail} />
               <FieldInput label='Password' type='password' placeholder='Type your password' value={password} setValue={setPassword} />
-              <Checkbox />
+              <fieldset className='form__options'>
+                <Checkbox />
+                <p>
+                  <a href="#" aria-label="Recover forgotten password">Forgot password</a>
+                </p>
+
+              </fieldset>
               <Button>Login</Button>
             </form>
           </section>
