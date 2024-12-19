@@ -86,6 +86,14 @@
       );
     }
 
+    function Link({ children }) {
+      return (
+        <a href='#' className='container-links__link'>
+          children
+        </a>
+      )
+    }
+
 
     function LoginPage() {
       const [email, setEmail] = React.useState('');
