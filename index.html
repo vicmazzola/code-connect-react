@@ -59,10 +59,13 @@
 
     function Checkbox() {
       return (
-        <div className='form__checkbox-field'>
+        <React.Fragment>
+          <div className='form__checkbox-field'>
             <input type='checkbox' id='remember' />
             <label for='remember' />
-        </div>
+          </div>
+          <p className='form__options-text'>Remember-me</p>
+        </React.Fragment>
       )
     }
 
