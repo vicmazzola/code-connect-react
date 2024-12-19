@@ -69,6 +69,24 @@
       )
     }
 
+    function Text({ className, children }) {
+      return (
+        <p className={className}>{children}</p>
+      );
+    }
+
+    function SocialMediaItem({ link, name }) {
+      return (
+        <li>
+          <a href={link}>
+            <img src={`./img/${name}.svg`} alt={`icon of ${name}`} />
+            {name}
+          </a>
+        </li>
+      );
+    }
+
+
     function LoginPage() {
       const [email, setEmail] = React.useState('');
       const [password, setPassword] = React.useState('');
