@@ -129,6 +129,7 @@
   font-size: 15px;
   color: var(--offwhite);
   position: relative;
+  
 }
 
 .container-links__title::before,
@@ -145,8 +146,13 @@
 
 .container-links__title::after {
   left: initial;
-  right: 1em;
+  right: -0.5em;
 }
+
+.container-links__title::before {
+  left: -0.5em; 
+}
+
 
 .container-links ul {
   display: flex;
