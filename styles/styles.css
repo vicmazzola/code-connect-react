@@ -35,7 +35,7 @@ body {
 }
 
 @media (max-width: 360px) {
-  
+
   .container-login {
     margin: 5% !important;
     padding: 1em 0.5em;
@@ -77,7 +77,7 @@ body {
 @media (max-width: 480px) {
   .container-login {
     margin: 5%;
-    padding: 2em 1em;
+    padding: 1em 0.5em;
     gap: 1em;
   }
 
@@ -105,7 +105,7 @@ body {
   .container-login {
     flex-direction: column;
     padding: 2em 1em;
-    margin: 10%;
+    margin: 5%;
     gap: 1.5em;
   }
 
@@ -127,10 +127,10 @@ body {
 
   .form__subtitle {
     font-size: 18px;
-
-    .form__checkbox-field {
-      margin-right: 0.3em;
-    }
-
   }
+
+  .form__checkbox-field {
+    margin-right: 0.3em;
+  }
+
 }
