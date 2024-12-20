@@ -66,7 +66,7 @@
   visibility: hidden;
 }
 
-.form__checkbox-field input[type="checkbox"]:checked + label::after {
+.form__checkbox-field input[type="checkbox"]:checked+label::after {
   opacity: 1;
 }
 
@@ -129,7 +129,7 @@
   font-size: 15px;
   color: var(--offwhite);
   position: relative;
-  
+
 }
 
 .container-links__title::before,
@@ -150,7 +150,7 @@
 }
 
 .container-links__title::before {
-  left: -0.5em; 
+  left: -0.5em;
 }
 
 
@@ -247,14 +247,14 @@
   }
 
   .container-links img {
-    display: inline-block; 
-    width: 32px; 
-    height: 32px; 
-    margin: 0.5em; 
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    margin: 0.5em;
   }
 
   .container-links ul {
-    justify-content: center; 
+    justify-content: center;
   }
 
   .form__input-field input,
@@ -270,6 +270,14 @@
   .form__subtitle {
     font-size: 16px;
   }
+
+  .form__button {
+    font-size: 16px;
+    padding: 10px 14px;
+    width: 90%;
+    margin: 1em auto;
+    border-radius: 6px;
+  }
 }
 
 
@@ -277,10 +285,9 @@
 
 
 @media (max-width: 360px) {
-  
+
 
   .container-login {
-    margin: 5% !important;
     padding: 1em 0.5em;
     gap: 0.8em;
   }
@@ -288,6 +295,7 @@
   .container-login img {
     display: none;
   }
+
   .container-links img {
     display: none !important;
   }
@@ -298,7 +306,7 @@
 
   .form__input-field input,
   .form__button {
-    width: 100%;
+    width: 80%;
     margin: 0.5em 0;
   }
 
@@ -318,5 +326,12 @@
     font-size: 12px;
     margin-left: 0.5em;
     margin-top: 0.2em;
+  }
+
+  .form__button {
+    font-size: 14px;
+    padding: 8px 12px;
+    width: 100%;
+    margin: 1em 0;
   }
 }
