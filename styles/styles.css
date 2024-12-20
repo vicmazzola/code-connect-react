@@ -34,6 +34,45 @@ body {
   height: 100%;
 }
 
+@media (max-width: 360px) {
+  
+  .container-login {
+    margin: 5% !important;
+    padding: 1em 0.5em;
+    gap: 0.8em;
+  }
+
+  .container-login img {
+    display: none;
+  }
+
+  .form__input-field input,
+  .form__button {
+    width: 100%;
+    margin: 0.5em 0;
+  }
+
+  .form__title {
+    font-size: 20px;
+  }
+
+  .form__subtitle {
+    font-size: 14px;
+  }
+
+  .form__checkbox-field {
+    margin-right: 0.5em;
+  }
+
+  .form__options-text {
+    font-size: 12px;
+    margin-left: 0.5em;
+    margin-top: 0.2em;
+  }
+}
+
+
+
 
 @media (max-width: 480px) {
   .container-login {

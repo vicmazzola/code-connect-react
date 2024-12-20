@@ -2,7 +2,7 @@
 .container-login {
   display: flex;
   background-color: var(--dark-gray);
-  padding: 3.5em 5em;
+  padding: 2em 2em;
   border-radius: 32px;
   gap: 3em;
 }
