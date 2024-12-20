@@ -33,3 +33,71 @@ body {
   align-items: center;
   height: 100%;
 }
+
+
+@media (max-width: 480px) {
+   .container-login {
+    margin: 5%; 
+    padding: 2em 1em; 
+    gap: 1em; 
+  }
+
+  .container-login img {
+    display: none; 
+  }
+
+  .form__input-field input,
+  .form__button {
+    width: 95%; 
+    margin: 0 auto; 
+  }
+
+  .form__title {
+    font-size: 22px;
+  }
+
+  .form__subtitle {
+    font-size: 16px; 
+  }
+}
+
+
+@media (max-width: 768px) {
+  .container-login {
+    flex-direction: column; 
+    padding: 2em 1em; 
+    margin: 10%;
+  }
+
+  .container-login img {
+    width: 80%; 
+    margin-bottom: 1em; 
+    align-self: center; 
+  }
+
+  .form__input-field input,
+  .form__button {
+    width: 90%; 
+    margin: 0 auto; 
+  }
+
+  .form__title {
+    font-size: 24px;
+  }
+
+  .form__subtitle {
+    font-size: 18px;
+  }
+
+  .container-login {
+    gap: 1.5em; 
+  }
+
+  .form__checkbox-field {
+    margin-right: 0.3em; 
+  }
+
+  
+  
+}
+
